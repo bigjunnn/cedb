@@ -1,0 +1,898 @@
+Gender,Height,Weight,BMI Index,Food,Fullness
+M,1.7,70,24.11,Basil Rice,4
+F,1.54,49,20.62,Basil Rice,8
+F,1.58,52,20.76,Basil Rice,8
+F,1.65,51,18.79,Basil Rice,10
+F,1.69,48,16.77,Basil Rice,10
+F,1.69,47,16.42,Basil Rice,10
+M,1.73,62,20.67,Basil Rice,6
+M,1.7,63,21.77,Basil Rice,7
+M,1.83,60,17.96,Basil Rice,6
+F,1.57,57,23.1,Basil Rice,3
+M,1.64,68,25.13,Basil Rice,2
+M,1.71,67,23.02,Basil Rice,4
+F,1.69,57,19.96,Basil Rice,9
+M,1.74,73,24.09,Basil Rice,4
+M,1.77,65,20.72,Basil Rice,6
+F,1.63,57,21.49,Basil Rice,7
+F,1.48,49,22.43,Basil Rice,5
+M,1.73,63,20.97,Basil Rice,8
+F,1.52,50,21.73,Basil Rice,8
+F,1.49,57,25.68,Basil Rice,2
+M,1.68,62,21.88,Basil Rice,8
+F,1.47,49,22.58,Basil Rice,5
+M,1.82,79,23.76,Basil Rice,4
+M,1.59,73,28.95,Basil Rice,2
+F,1.53,49,20.96,Basil Rice,8
+M,1.83,61,18.28,Basil Rice,6
+M,1.61,65,25.09,Basil Rice,2
+F,1.55,49,20.4,Basil Rice,8
+F,1.6,56,21.92,Basil Rice,7
+F,1.56,52,21.47,Basil Rice,7
+F,1.57,57,23.04,Basil Rice,5
+M,1.66,79,28.55,Basil Rice,2
+M,1.58,79,31.55,Basil Rice,2
+M,1.72,71,23.96,Basil Rice,4
+F,1.63,49,18.39,Basil Rice,10
+F,1.48,45,20.54,Basil Rice,8
+M,1.66,68,24.81,Basil Rice,5
+M,1.64,65,24.29,Basil Rice,4
+M,1.73,80,26.67,Basil Rice,2
+F,1.6,51,19.92,Basil Rice,9
+M,1.73,77,25.6,Basil Rice,2
+M,1.77,75,23.9,Basil Rice,5
+M,1.81,67,20.36,Basil Rice,8
+F,1.58,54,21.6,Basil Rice,8
+F,1.63,46,17.42,Basil Rice,10
+M,1.64,67,24.97,Basil Rice,5
+M,1.65,75,27.7,Basil Rice,2
+F,1.56,52,21.35,Basil Rice,8
+F,1.56,51,20.9,Basil Rice,8
+F,1.7,58,20.14,Basil Rice,8
+F,1.61,57,22.09,Basil Rice,4
+M,1.84,78,23.09,Basil Rice,4
+F,1.57,57,23,Basil Rice,4
+M,1.61,72,27.81,Basil Rice,2
+F,1.62,51,19.4,Basil Rice,10
+M,1.58,70,28.03,Basil Rice,2
+F,1.56,51,21.02,Basil Rice,8
+F,1.59,53,20.92,Basil Rice,8
+M,1.74,72,23.91,Basil Rice,4
+M,1.59,62,24.43,Basil Rice,5
+F,1.6,57,22.18,Basil Rice,6
+F,1.67,51,18.2,Basil Rice,10
+M,1.81,64,19.57,Basil Rice,6
+F,1.62,52,19.7,Basil Rice,10
+M,1.78,73,23.06,Basil Rice,5
+M,1.6,60,23.58,Basil Rice,4
+M,1.67,68,24.27,Basil Rice,4
+F,1.53,50,21.43,Basil Rice,7
+M,1.7,80,27.68,Basil Rice,2
+M,1.81,64,19.43,Basil Rice,7
+M,1.75,66,21.47,Basil Rice,8
+F,1.7,45,15.62,Basil Rice,10
+M,1.73,72,24.18,Basil Rice,4
+F,1.61,54,20.81,Basil Rice,7
+F,1.62,47,17.99,Basil Rice,10
+F,1.69,60,21.1,Basil Rice,8
+M,1.77,63,20.1,Basil Rice,7
+F,1.65,53,19.54,Basil Rice,9
+F,1.62,60,22.83,Basil Rice,4
+F,1.56,54,22.24,Basil Rice,5
+M,1.8,64,19.76,Basil Rice,6
+F,1.59,60,23.63,Basil Rice,4
+F,1.68,48,16.94,Basil Rice,10
+M,1.59,62,24.64,Basil Rice,5
+F,1.63,53,19.9,Basil Rice,9
+M,1.76,75,24.29,Basil Rice,5
+M,1.63,80,30.03,Basil Rice,2
+F,1.61,49,18.96,Basil Rice,9
+F,1.62,58,22.14,Basil Rice,4
+F,1.52,49,21.27,Basil Rice,7
+M,1.71,61,20.96,Basil Rice,6
+F,1.69,55,19.22,Basil Rice,10
+F,1.54,55,23.17,Basil Rice,6
+M,1.65,75,27.48,Basil Rice,2
+M,1.82,64,19.22,Basil Rice,7
+M,1.72,64,21.54,Basil Rice,7
+M,1.67,74,26.65,Basil Rice,2
+M,1.62,75,28.67,Basil Rice,2
+M,1.76,67,21.68,Basil Rice,6
+M,1.6,63,24.75,Basil Rice,4
+F,1.65,54,19.93,Basil Rice,9
+F,1.6,49,19.15,Basil Rice,10
+M,1.61,62,23.97,Basil Rice,4
+M,1.74,65,21.5,Basil Rice,6
+M,1.7,72,24.9,Basil Rice,5
+M,1.66,64,23.35,Basil Rice,4
+F,1.65,59,21.7,Basil Rice,7
+F,1.55,59,24.65,Basil Rice,2
+M,1.65,68,24.9,Basil Rice,4
+F,1.53,56,24.06,Basil Rice,2
+M,1.73,76,25.4,Basil Rice,2
+M,1.8,71,21.81,Basil Rice,8
+M,1.62,68,25.84,Basil Rice,2
+F,1.7,57,19.81,Basil Rice,10
+F,1.47,48,22.17,Basil Rice,3
+F,1.7,60,20.88,Basil Rice,8
+M,1.68,61,21.64,Basil Rice,7
+M,1.67,78,28.14,Basil Rice,2
+F,1.64,48,17.74,Basil Rice,9
+F,1.65,53,19.41,Basil Rice,10
+M,1.7,61,21.13,Basil Rice,8
+M,1.58,71,28.39,Basil Rice,2
+F,1.65,48,17.73,Basil Rice,10
+M,1.78,75,23.56,Basil Rice,4
+F,1.53,54,23.2,Basil Rice,4
+F,1.6,51,19.96,Basil Rice,9
+M,1.71,63,21.64,Basil Rice,6
+F,1.68,58,20.45,Basil Rice,7
+F,1.65,55,20.1,Basil Rice,7
+F,1.51,51,22.5,Basil Rice,3
+F,1.67,59,21.06,Basil Rice,8
+M,1.62,73,27.68,Basil Rice,2
+M,1.71,72,24.61,Basil Rice,4
+M,1.59,70,27.81,Basil Rice,2
+F,1.61,45,17.36,Basil Rice,10
+F,1.67,48,17.31,Basil Rice,9
+F,1.47,53,24.5,Basil Rice,2
+M,1.82,66,19.83,Basil Rice,8
+M,1.62,65,24.77,Basil Rice,4
+F,1.63,50,18.82,Basil Rice,10
+M,1.65,65,23.93,Basil Rice,5
+M,1.59,67,26.48,Basil Rice,2
+M,1.69,63,22.03,Basil Rice,4
+M,1.8,72,22.29,Basil Rice,4
+F,1.53,52,22.16,Basil Rice,5
+M,1.75,71,23.31,Basil Rice,5
+M,1.7,73,25.2,Basil Rice,2
+F,1.49,54,24.26,Basil Rice,2
+F,1.63,46,17.21,Basil Rice,10
+M,1.59,71,28.21,Basil Rice,2
+M,1.61,70,27.12,Basil Rice,2
+F,1.6,57,22.17,Basil Rice,5
+F,1.56,50,20.63,Basil Rice,7
+M,1.69,62,21.79,Basil Rice,6
+M,1.81,64,19.62,Basil Rice,8
+F,1.52,53,22.86,Basil Rice,6
+F,1.51,50,21.89,Basil Rice,8
+F,1.66,57,20.57,Basil Rice,7
+F,1.65,54,19.72,Basil Rice,10
+M,1.73,74,24.72,Basil Rice,5
+F,1.48,58,26.32,Basil Rice,2
+F,1.64,60,22.41,Basil Rice,4
+F,1.51,58,25.36,Basil Rice,2
+F,1.61,57,21.86,Basil Rice,8
+F,1.5,55,24.36,Basil Rice,2
+M,1.81,73,22.19,Basil Rice,5
+M,1.63,71,26.62,Basil Rice,2
+F,1.55,49,20.34,Basil Rice,7
+M,1.72,61,20.68,Basil Rice,8
+F,1.63,46,17.26,Basil Rice,10
+F,1.49,52,23.49,Basil Rice,3
+M,1.74,60,19.83,Basil Rice,8
+F,1.54,59,25.01,Basil Rice,2
+M,1.67,77,27.69,Basil Rice,2
+F,1.5,59,26.28,Basil Rice,2
+F,1.55,45,18.62,Basil Rice,10
+F,1.66,53,19.24,Basil Rice,9
+F,1.58,46,18.46,Basil Rice,9
+M,1.63,68,25.54,Basil Rice,2
+F,1.55,55,23.02,Basil Rice,6
+F,1.48,45,20.63,Basil Rice,7
+M,1.67,60,21.43,Basil Rice,7
+F,1.68,57,20.29,Basil Rice,7
+M,1.72,74,25.12,Basil Rice,2
+F,1.62,54,20.47,Basil Rice,8
+F,1.6,57,22.32,Basil Rice,5
+F,1.56,57,23.39,Basil Rice,3
+M,1.79,75,23.5,Basil Rice,5
+M,1.78,67,21.22,Basil Rice,7
+M,1.83,70,20.87,Basil Rice,7
+F,1.51,47,20.73,Basil Rice,7
+M,1.73,62,20.82,Basil Rice,6
+M,1.79,60,18.79,Basil Rice,6
+F,1.53,55,23.64,Basil Rice,6
+F,1.61,48,18.45,Basil Rice,9
+F,1.63,57,21.38,Basil Rice,7
+M,1.82,78,23.68,Basil Rice,4
+M,1.75,62,20.3,Basil Rice,7
+F,1.64,58,21.47,Basil Rice,8
+M,1.82,64,19.31,Basil Rice,8
+F,1.5,54,23.87,Basil Rice,4
+M,1.62,62,23.57,Basil Rice,5
+F,1.48,45,20.41,Basil Rice,7
+M,1.59,80,31.58,Basil Rice,2
+F,1.56,60,24.59,Basil Rice,2
+F,1.62,54,20.68,Basil Rice,8
+M,1.62,67,25.66,Basil Rice,2
+F,1.62,55,20.85,Basil Rice,7
+M,1.71,63,21.56,Basil Rice,6
+F,1.68,56,19.9,Basil Rice,10
+F,1.48,55,25.26,Basil Rice,2
+F,1.58,52,20.92,Basil Rice,7
+F,1.58,49,19.66,Basil Rice,9
+M,1.66,62,22.6,Basil Rice,4
+M,1.81,79,24.17,Basil Rice,5
+M,1.58,66,26.35,Basil Rice,2
+F,1.52,48,20.65,Basil Rice,7
+F,1.53,58,24.81,Basil Rice,2
+F,1.64,50,18.53,Basil Rice,9
+F,1.69,56,19.63,Basil Rice,10
+M,1.63,77,28.9,Basil Rice,2
+M,1.74,76,25.1,Basil Rice,2
+M,1.6,62,24.26,Basil Rice,5
+F,1.51,51,22.23,Basil Rice,4
+M,1.81,66,20.12,Basil Rice,8
+F,1.67,58,20.9,Basil Rice,8
+F,1.66,54,19.7,Basil Rice,10
+M,1.76,68,22.06,Basil Rice,5
+F,1.65,45,16.57,Basil Rice,9
+M,1.71,67,22.92,Basil Rice,5
+F,1.67,56,20.11,Basil Rice,8
+F,1.65,47,17.36,Basil Rice,10
+M,1.68,69,24.59,Basil Rice,4
+F,1.68,49,17.41,Basil Rice,10
+M,1.81,70,21.42,Basil Rice,6
+M,1.84,63,18.68,Basil Rice,6
+F,1.51,58,25.46,Basil Rice,2
+M,1.78,75,23.58,Basil Rice,5
+M,1.73,74,24.66,Basil Rice,4
+F,1.56,49,20.23,Basil Rice,7
+M,1.8,72,22.13,Basil Rice,5
+F,1.48,53,24.13,Basil Rice,2
+M,1.58,78,31.15,Basil Rice,2
+M,1.76,65,20.91,Basil Rice,7
+F,1.69,52,18.16,Basil Rice,9
+M,1.7,64,22.27,Basil Rice,5
+M,1.71,70,23.88,Basil Rice,4
+F,1.62,59,22.37,Basil Rice,5
+M,1.82,72,21.83,Basil Rice,7
+F,1.62,58,22.11,Basil Rice,6
+M,1.84,62,18.4,Basil Rice,8
+M,1.73,70,23.49,Basil Rice,4
+F,1.5,58,25.79,Basil Rice,2
+M,1.78,60,18.99,Basil Rice,7
+M,1.62,71,27.17,Basil Rice,2
+M,1.81,66,20.19,Basil Rice,8
+F,1.57,48,19.58,Basil Rice,9
+F,1.53,57,24.28,Basil Rice,2
+M,1.83,80,23.83,Basil Rice,4
+M,1.65,61,22.46,Basil Rice,4
+F,1.59,56,22.1,Basil Rice,3
+M,1.58,62,24.74,Basil Rice,5
+M,1.81,61,18.59,Basil Rice,8
+F,1.53,60,25.68,Basil Rice,2
+F,1.62,48,18.19,Basil Rice,10
+M,1.68,70,24.74,Basil Rice,5
+F,1.7,51,17.65,Basil Rice,9
+M,1.62,78,29.8,Basil Rice,2
+M,1.62,63,24.07,Basil Rice,4
+F,1.57,47,19.17,Basil Rice,10
+F,1.48,52,23.61,Basil Rice,3
+M,1.67,68,24.51,Basil Rice,4
+M,1.71,67,22.81,Basil Rice,4
+M,1.71,68,23.24,Basil Rice,5
+M,1.84,76,22.52,Basil Rice,5
+M,1.79,75,23.46,Basil Rice,5
+M,1.77,76,24.21,Basil Rice,4
+F,1.49,57,25.77,Basil Rice,2
+F,1.69,48,16.76,Basil Rice,10
+F,1.66,56,20.41,Basil Rice,8
+F,1.58,48,19.32,Basil Rice,9
+F,1.66,53,19.21,Basil Rice,10
+F,1.6,57,22.16,Basil Rice,6
+M,1.64,60,22.42,Basil Rice,4
+M,1.79,64,19.99,Basil Rice,8
+M,1.67,60,21.62,Basil Rice,7
+F,1.54,54,22.72,Basil Rice,5
+M,1.65,73,26.72,Basil Rice,2
+M,1.58,73,29.15,Basil Rice,2
+F,1.53,58,24.7,Basil Rice,2
+M,1.82,68,20.48,Basil Rice,6
+F,1.6,55,21.57,Basil Rice,8
+M,1.6,61,23.89,Basil Rice,5
+M,1.79,63,19.6,Basil Rice,6
+F,1.64,54,19.96,Basil Rice,10
+M,1.75,74,24.26,Basil Rice,5
+M,1.81,65,19.75,Basil Rice,8
+M,1.61,72,27.67,Basil Rice,2
+M,1.68,63,22.28,Basil Rice,4
+F,1.6,57,22.21,Pineapple Fried Rice,3
+F,1.52,53,23.04,Pineapple Fried Rice,4
+M,1.61,64,24.75,Pineapple Fried Rice,3
+F,1.52,52,22.6,Pineapple Fried Rice,2
+M,1.82,67,20.23,Pineapple Fried Rice,6
+M,1.63,80,30.07,Pineapple Fried Rice,1
+M,1.69,68,23.79,Pineapple Fried Rice,3
+M,1.7,64,22.05,Pineapple Fried Rice,4
+F,1.65,46,16.88,Pineapple Fried Rice,10
+M,1.78,77,24.4,Pineapple Fried Rice,4
+M,1.62,69,26.22,Pineapple Fried Rice,1
+F,1.59,45,17.81,Pineapple Fried Rice,8
+F,1.59,53,21,Pineapple Fried Rice,6
+M,1.66,63,22.91,Pineapple Fried Rice,3
+M,1.7,72,24.96,Pineapple Fried Rice,3
+M,1.62,68,25.86,Pineapple Fried Rice,1
+M,1.83,64,19.1,Pineapple Fried Rice,7
+M,1.6,80,31.14,Pineapple Fried Rice,1
+M,1.7,71,24.54,Pineapple Fried Rice,3
+M,1.74,63,20.81,Pineapple Fried Rice,7
+F,1.69,50,17.57,Pineapple Fried Rice,9
+M,1.58,69,27.48,Pineapple Fried Rice,1
+M,1.78,68,21.43,Pineapple Fried Rice,7
+F,1.59,47,18.59,Pineapple Fried Rice,8
+M,1.6,74,28.74,Pineapple Fried Rice,1
+F,1.53,52,22.3,Pineapple Fried Rice,4
+M,1.66,73,26.59,Pineapple Fried Rice,1
+F,1.49,47,21.18,Pineapple Fried Rice,7
+M,1.84,75,22.22,Pineapple Fried Rice,4
+M,1.83,68,20.41,Pineapple Fried Rice,6
+F,1.62,49,18.62,Pineapple Fried Rice,8
+F,1.61,48,18.43,Pineapple Fried Rice,9
+F,1.49,56,25.31,Pineapple Fried Rice,1
+F,1.52,58,24.96,Pineapple Fried Rice,1
+F,1.69,53,18.54,Pineapple Fried Rice,8
+F,1.5,52,23.04,Pineapple Fried Rice,2
+F,1.53,59,25.31,Pineapple Fried Rice,1
+M,1.81,72,21.95,Pineapple Fried Rice,7
+F,1.49,47,21.14,Pineapple Fried Rice,6
+F,1.52,59,25.45,Pineapple Fried Rice,1
+F,1.68,47,16.75,Pineapple Fried Rice,9
+F,1.7,49,17.04,Pineapple Fried Rice,9
+F,1.61,48,18.59,Pineapple Fried Rice,8
+M,1.61,62,24.03,Pineapple Fried Rice,3
+M,1.82,68,20.51,Pineapple Fried Rice,7
+F,1.62,52,19.85,Pineapple Fried Rice,8
+F,1.68,50,17.72,Pineapple Fried Rice,8
+F,1.64,47,17.49,Pineapple Fried Rice,9
+M,1.79,73,22.77,Pineapple Fried Rice,4
+M,1.6,71,27.8,Pineapple Fried Rice,1
+F,1.55,53,22.14,Pineapple Fried Rice,3
+M,1.64,66,24.51,Pineapple Fried Rice,3
+F,1.48,49,22.36,Pineapple Fried Rice,3
+F,1.6,59,23.09,Pineapple Fried Rice,3
+M,1.83,74,22.01,Pineapple Fried Rice,4
+F,1.5,52,23.22,Pineapple Fried Rice,2
+M,1.72,65,22.07,Pineapple Fried Rice,3
+F,1.48,46,21.14,Pineapple Fried Rice,7
+F,1.54,50,21.14,Pineapple Fried Rice,6
+M,1.6,71,27.72,Pineapple Fried Rice,1
+M,1.71,74,25.27,Pineapple Fried Rice,1
+M,1.8,60,18.44,Pineapple Fried Rice,5
+F,1.5,56,24.78,Pineapple Fried Rice,1
+F,1.59,45,17.7,Pineapple Fried Rice,10
+M,1.68,76,27.04,Pineapple Fried Rice,1
+F,1.66,53,19.23,Pineapple Fried Rice,8
+F,1.55,52,21.7,Pineapple Fried Rice,7
+F,1.67,48,17.2,Pineapple Fried Rice,9
+M,1.67,77,27.68,Pineapple Fried Rice,1
+M,1.62,70,26.77,Pineapple Fried Rice,1
+F,1.52,54,23.3,Pineapple Fried Rice,5
+F,1.52,45,19.58,Pineapple Fried Rice,8
+F,1.66,50,18.05,Pineapple Fried Rice,8
+M,1.64,66,24.41,Pineapple Fried Rice,3
+M,1.59,66,26.26,Pineapple Fried Rice,1
+F,1.58,57,22.86,Pineapple Fried Rice,2
+F,1.61,58,22.44,Pineapple Fried Rice,2
+M,1.81,77,23.42,Pineapple Fried Rice,4
+M,1.6,73,28.58,Pineapple Fried Rice,1
+F,1.52,60,25.88,Pineapple Fried Rice,1
+M,1.79,69,21.62,Pineapple Fried Rice,6
+M,1.66,62,22.37,Pineapple Fried Rice,4
+M,1.72,79,26.59,Pineapple Fried Rice,1
+F,1.63,48,18,Pineapple Fried Rice,9
+M,1.74,60,19.93,Pineapple Fried Rice,6
+F,1.48,56,25.62,Pineapple Fried Rice,1
+M,1.68,74,26.34,Pineapple Fried Rice,1
+F,1.61,46,17.82,Pineapple Fried Rice,8
+F,1.59,46,18.11,Pineapple Fried Rice,8
+M,1.59,68,27.01,Pineapple Fried Rice,1
+M,1.8,68,21,Pineapple Fried Rice,6
+F,1.53,55,23.62,Pineapple Fried Rice,5
+F,1.68,56,19.74,Pineapple Fried Rice,9
+F,1.54,48,20.26,Pineapple Fried Rice,7
+M,1.66,68,24.67,Pineapple Fried Rice,4
+M,1.82,68,20.45,Pineapple Fried Rice,6
+F,1.59,53,20.87,Pineapple Fried Rice,6
+F,1.49,60,26.89,Pineapple Fried Rice,1
+M,1.72,80,26.98,Pineapple Fried Rice,1
+M,1.83,61,18.13,Pineapple Fried Rice,7
+F,1.57,54,21.8,Pineapple Fried Rice,6
+F,1.56,46,18.87,Pineapple Fried Rice,10
+F,1.48,47,21.32,Pineapple Fried Rice,6
+F,1.66,47,17,Pineapple Fried Rice,10
+M,1.79,61,19.07,Pineapple Fried Rice,5
+M,1.59,68,26.82,Pineapple Fried Rice,1
+F,1.57,48,19.38,Pineapple Fried Rice,9
+M,1.77,61,19.56,Pineapple Fried Rice,6
+F,1.6,50,19.49,Pineapple Fried Rice,8
+F,1.54,48,20.37,Pineapple Fried Rice,6
+F,1.59,45,17.75,Pineapple Fried Rice,8
+M,1.6,76,29.51,Pineapple Fried Rice,1
+M,1.76,64,20.57,Pineapple Fried Rice,6
+F,1.54,45,19.06,Pineapple Fried Rice,9
+F,1.68,53,18.78,Pineapple Fried Rice,9
+F,1.64,55,20.55,Pineapple Fried Rice,7
+M,1.67,73,26.04,Pineapple Fried Rice,1
+M,1.67,66,23.74,Pineapple Fried Rice,4
+M,1.83,73,21.9,Pineapple Fried Rice,5
+F,1.65,48,17.73,Pineapple Fried Rice,9
+F,1.68,46,16.3,Pineapple Fried Rice,8
+M,1.79,63,19.76,Pineapple Fried Rice,7
+F,1.62,58,21.97,Pineapple Fried Rice,6
+M,1.82,65,19.71,Pineapple Fried Rice,7
+M,1.64,75,27.94,Pineapple Fried Rice,1
+M,1.61,71,27.39,Pineapple Fried Rice,1
+F,1.51,49,21.56,Pineapple Fried Rice,7
+M,1.71,60,20.56,Pineapple Fried Rice,7
+M,1.68,72,25.37,Pineapple Fried Rice,1
+M,1.62,75,28.75,Pineapple Fried Rice,1
+M,1.8,74,22.92,Pineapple Fried Rice,4
+M,1.65,63,23.24,Pineapple Fried Rice,3
+F,1.53,56,24.08,Pineapple Fried Rice,1
+F,1.59,51,20.1,Pineapple Fried Rice,6
+M,1.68,60,21.22,Pineapple Fried Rice,7
+F,1.5,51,22.76,Pineapple Fried Rice,3
+M,1.78,76,23.92,Pineapple Fried Rice,3
+M,1.67,70,25.07,Pineapple Fried Rice,1
+F,1.52,56,24.12,Pineapple Fried Rice,1
+F,1.69,53,18.51,Pineapple Fried Rice,9
+M,1.75,66,21.6,Pineapple Fried Rice,5
+M,1.69,62,21.74,Pineapple Fried Rice,6
+M,1.73,76,25.29,Pineapple Fried Rice,1
+F,1.54,60,25.39,Pineapple Fried Rice,1
+F,1.62,58,22.11,Pineapple Fried Rice,4
+M,1.75,60,19.55,Pineapple Fried Rice,6
+F,1.48,54,24.72,Pineapple Fried Rice,1
+M,1.76,64,20.67,Pineapple Fried Rice,6
+M,1.73,73,24.36,Pineapple Fried Rice,3
+M,1.83,60,17.84,Pineapple Fried Rice,6
+F,1.48,56,25.51,Pineapple Fried Rice,1
+F,1.67,54,19.47,Pineapple Fried Rice,9
+M,1.69,68,23.89,Pineapple Fried Rice,3
+F,1.52,51,22.08,Pineapple Fried Rice,5
+M,1.58,79,31.55,Pineapple Fried Rice,1
+M,1.64,80,29.58,Pineapple Fried Rice,1
+M,1.58,68,27.11,Pineapple Fried Rice,1
+F,1.63,52,19.62,Pineapple Fried Rice,10
+M,1.81,75,22.93,Pineapple Fried Rice,4
+F,1.69,53,18.49,Pineapple Fried Rice,10
+M,1.65,80,29.23,Pineapple Fried Rice,1
+M,1.59,62,24.59,Pineapple Fried Rice,4
+F,1.7,57,19.76,Pineapple Fried Rice,9
+M,1.62,67,25.41,Pineapple Fried Rice,1
+M,1.8,75,23.11,Pineapple Fried Rice,3
+M,1.8,60,18.44,Pineapple Fried Rice,6
+F,1.61,52,20.13,Pineapple Fried Rice,7
+M,1.61,64,24.78,Pineapple Fried Rice,4
+M,1.82,75,22.76,Pineapple Fried Rice,4
+F,1.54,45,19.01,Pineapple Fried Rice,8
+M,1.62,66,25,Pineapple Fried Rice,4
+M,1.7,66,22.88,Pineapple Fried Rice,4
+F,1.58,50,20.15,Pineapple Fried Rice,6
+F,1.6,58,22.54,Pineapple Fried Rice,3
+M,1.65,80,29.31,Pineapple Fried Rice,1
+M,1.58,73,29.16,Pineapple Fried Rice,1
+F,1.57,50,20.29,Pineapple Fried Rice,6
+M,1.8,61,18.82,Pineapple Fried Rice,5
+M,1.81,65,19.88,Pineapple Fried Rice,7
+F,1.61,47,18.16,Pineapple Fried Rice,9
+F,1.51,51,22.43,Pineapple Fried Rice,4
+M,1.7,63,21.7,Pineapple Fried Rice,6
+M,1.63,79,29.76,Pineapple Fried Rice,1
+M,1.73,61,20.33,Pineapple Fried Rice,6
+F,1.56,49,20.22,Pineapple Fried Rice,6
+M,1.77,72,23.09,Pineapple Fried Rice,3
+F,1.53,53,22.74,Pineapple Fried Rice,2
+M,1.67,70,25.22,Pineapple Fried Rice,1
+F,1.65,52,19.15,Pineapple Fried Rice,8
+M,1.76,77,24.98,Pineapple Fried Rice,3
+F,1.58,46,18.48,Pineapple Fried Rice,10
+F,1.48,51,23.36,Pineapple Fried Rice,3
+M,1.6,67,26.05,Pineapple Fried Rice,1
+M,1.7,68,23.61,Pineapple Fried Rice,4
+M,1.83,80,23.88,Pineapple Fried Rice,4
+F,1.63,48,18.04,Pineapple Fried Rice,8
+M,1.76,60,19.4,Pineapple Fried Rice,7
+F,1.58,46,18.53,Pineapple Fried Rice,9
+F,1.63,48,17.98,Pineapple Fried Rice,8
+M,1.71,61,20.79,Pineapple Fried Rice,7
+M,1.62,68,25.93,Pineapple Fried Rice,1
+M,1.67,80,28.79,Pineapple Fried Rice,1
+F,1.53,53,22.69,Pineapple Fried Rice,3
+M,1.68,71,25.23,Pineapple Fried Rice,1
+M,1.63,68,25.61,Pineapple Fried Rice,1
+F,1.57,57,23.17,Pineapple Fried Rice,2
+M,1.77,69,21.91,Pineapple Fried Rice,6
+F,1.48,45,20.56,Pineapple Fried Rice,6
+M,1.59,76,30.22,Pineapple Fried Rice,1
+F,1.49,60,26.99,Pineapple Fried Rice,1
+F,1.66,52,18.84,Pineapple Fried Rice,9
+M,1.79,66,20.54,Pineapple Fried Rice,6
+M,1.65,79,28.89,Pineapple Fried Rice,1
+F,1.61,52,20.16,Pineapple Fried Rice,7
+M,1.8,61,18.92,Pineapple Fried Rice,7
+F,1.63,56,21.04,Pineapple Fried Rice,7
+F,1.5,55,24.38,Pineapple Fried Rice,1
+M,1.67,60,21.41,Pineapple Fried Rice,7
+M,1.79,62,19.38,Pineapple Fried Rice,5
+F,1.68,46,16.28,Pineapple Fried Rice,8
+F,1.62,48,18.19,Pineapple Fried Rice,8
+F,1.63,60,22.7,Pineapple Fried Rice,2
+M,1.59,67,26.46,Pineapple Fried Rice,1
+M,1.67,70,24.96,Pineapple Fried Rice,4
+M,1.59,80,31.81,Pineapple Fried Rice,1
+M,1.64,61,22.62,Pineapple Fried Rice,4
+F,1.63,58,21.72,Pineapple Fried Rice,6
+M,1.7,79,27.27,Pineapple Fried Rice,1
+M,1.82,61,18.35,Pineapple Fried Rice,6
+M,1.61,61,23.49,Pineapple Fried Rice,4
+M,1.67,74,26.54,Pineapple Fried Rice,1
+M,1.65,78,28.69,Pineapple Fried Rice,1
+F,1.51,58,25.47,Pineapple Fried Rice,1
+F,1.55,51,21.26,Pineapple Fried Rice,6
+M,1.82,68,20.42,Pineapple Fried Rice,7
+F,1.51,54,23.55,Pineapple Fried Rice,5
+F,1.51,55,24.06,Pineapple Fried Rice,1
+M,1.81,67,20.34,Pineapple Fried Rice,6
+M,1.65,61,22.42,Pineapple Fried Rice,3
+M,1.66,69,25.06,Pineapple Fried Rice,1
+M,1.65,69,25.22,Pineapple Fried Rice,1
+M,1.7,60,20.8,Pineapple Fried Rice,6
+M,1.63,75,28.1,Pineapple Fried Rice,1
+F,1.5,52,23.13,Pineapple Fried Rice,2
+M,1.65,78,28.59,Pineapple Fried Rice,1
+F,1.62,52,19.83,Pineapple Fried Rice,9
+F,1.67,60,21.57,Pineapple Fried Rice,7
+F,1.56,53,21.69,Pineapple Fried Rice,6
+F,1.62,51,19.43,Pineapple Fried Rice,10
+F,1.5,52,23.02,Pineapple Fried Rice,5
+F,1.6,46,18,Pineapple Fried Rice,8
+M,1.63,68,25.62,Pineapple Fried Rice,1
+F,1.53,51,21.93,Pineapple Fried Rice,7
+F,1.6,48,18.64,Pineapple Fried Rice,9
+F,1.63,49,18.36,Pineapple Fried Rice,10
+F,1.49,48,21.64,Pineapple Fried Rice,7
+M,1.77,60,19.16,Pineapple Fried Rice,5
+M,1.79,69,21.45,Pineapple Fried Rice,6
+F,1.69,53,18.58,Pineapple Fried Rice,10
+M,1.63,78,29.19,Pineapple Fried Rice,1
+M,1.6,67,26.19,Pineapple Fried Rice,1
+F,1.65,49,18.04,Pineapple Fried Rice,10
+F,1.67,56,20.05,Pineapple Fried Rice,7
+F,1.55,52,21.69,Pineapple Fried Rice,6
+F,1.57,56,22.82,Pineapple Fried Rice,4
+F,1.68,48,16.96,Pineapple Fried Rice,10
+M,1.73,78,26,Pineapple Fried Rice,1
+F,1.7,60,20.88,Pineapple Fried Rice,6
+M,1.78,67,21.19,Pineapple Fried Rice,7
+F,1.51,46,20.12,Pineapple Fried Rice,7
+M,1.82,71,21.43,Pineapple Fried Rice,5
+M,1.63,77,28.86,Pineapple Fried Rice,1
+M,1.77,74,23.71,Pineapple Fried Rice,4
+M,1.75,62,20.19,Pineapple Fried Rice,7
+M,1.81,78,23.88,Pineapple Fried Rice,4
+F,1.61,52,19.98,Pineapple Fried Rice,9
+F,1.67,60,21.55,Pineapple Fried Rice,6
+F,1.54,59,24.75,Pineapple Fried Rice,1
+F,1.54,54,22.83,Pineapple Fried Rice,5
+F,1.49,50,22.4,Pineapple Fried Rice,2
+M,1.6,71,27.64,Pineapple Fried Rice,1
+F,1.54,48,20.35,Pineapple Fried Rice,7
+F,1.66,49,17.76,Pineapple Fried Rice,10
+M,1.71,76,26,Pineapple Fried Rice,1
+M,1.58,66,26.43,Pineapple Fried Rice,1
+F,1.52,51,22.05,Pineapple Fried Rice,3
+F,1.57,45,18.16,Pineapple Fried Rice,9
+M,1.64,71,26.3,Pineapple Fried Rice,1
+M,1.78,61,19.33,Pineapple Fried Rice,6
+M,1.83,77,22.92,Pineapple Fried Rice,3
+F,1.49,50,22.4,Pineapple Fried Rice,4
+F,1.61,46,17.65,Pineapple Fried Rice,8
+F,1.54,55,23.26,Pineapple Fried Rice,4
+M,1.62,62,23.5,Pineapple Fried Rice,4
+M,1.67,78,28.13,Pineapple Fried Rice,1
+F,1.52,59,25.52,Pineapple Fried Rice,1
+M,1.7,61,21.21,Pineapple Fried Rice,6
+M,1.8,71,22,Pineapple Fried Rice,5
+F,1.54,56,23.63,Pineapple Fried Rice,5
+M,1.59,72,28.54,Pad Thai,1
+F,1.56,60,24.57,Pad Thai,1
+M,1.65,65,23.96,Pad Thai,3
+M,1.62,68,25.99,Pad Thai,1
+M,1.81,76,23.2,Pad Thai,2
+M,1.74,72,23.87,Pad Thai,2
+M,1.66,68,24.62,Pad Thai,3
+F,1.54,51,21.47,Pad Thai,6
+F,1.67,46,16.53,Pad Thai,7
+F,1.69,60,21.08,Pad Thai,6
+M,1.59,67,26.59,Pad Thai,1
+M,1.67,65,23.44,Pad Thai,3
+M,1.71,65,22.34,Pad Thai,3
+F,1.51,57,25.01,Pad Thai,1
+F,1.48,59,26.8,Pad Thai,1
+F,1.68,47,16.57,Pad Thai,8
+M,1.69,68,23.68,Pad Thai,2
+F,1.54,48,20.21,Pad Thai,5
+M,1.65,76,27.88,Pad Thai,1
+F,1.69,54,18.97,Pad Thai,9
+M,1.63,76,28.72,Pad Thai,1
+M,1.65,75,27.66,Pad Thai,1
+F,1.6,47,18.43,Pad Thai,9
+M,1.7,67,23.19,Pad Thai,2
+M,1.81,65,19.77,Pad Thai,4
+F,1.58,58,23.3,Pad Thai,3
+M,1.82,70,21.17,Pad Thai,5
+M,1.8,74,22.85,Pad Thai,3
+F,1.66,55,20.07,Pad Thai,6
+F,1.48,49,22.35,Pad Thai,2
+M,1.64,60,22.23,Pad Thai,3
+M,1.59,71,28.11,Pad Thai,1
+F,1.53,59,25.11,Pad Thai,1
+F,1.52,47,20.45,Pad Thai,5
+F,1.6,54,21.14,Pad Thai,6
+F,1.66,52,18.89,Pad Thai,7
+F,1.64,56,20.74,Pad Thai,5
+F,1.55,55,23,Pad Thai,3
+F,1.53,58,24.79,Pad Thai,1
+M,1.79,75,23.29,Pad Thai,3
+M,1.58,62,24.78,Pad Thai,3
+F,1.65,55,20.14,Pad Thai,5
+M,1.71,69,23.57,Pad Thai,3
+M,1.75,67,21.81,Pad Thai,4
+M,1.68,63,22.41,Pad Thai,3
+M,1.71,70,23.9,Pad Thai,2
+F,1.57,46,18.64,Pad Thai,8
+M,1.68,76,26.79,Pad Thai,1
+F,1.51,46,20.29,Pad Thai,5
+F,1.55,55,23.01,Pad Thai,3
+M,1.8,67,20.59,Pad Thai,6
+F,1.56,57,23.41,Pad Thai,1
+M,1.61,68,26.36,Pad Thai,1
+F,1.56,47,19.26,Pad Thai,7
+F,1.49,50,22.55,Pad Thai,4
+F,1.67,47,16.91,Pad Thai,8
+F,1.57,50,20.39,Pad Thai,5
+F,1.61,56,21.72,Pad Thai,6
+M,1.79,75,23.32,Pad Thai,2
+M,1.78,66,20.93,Pad Thai,5
+M,1.66,75,27.32,Pad Thai,1
+M,1.64,78,28.91,Pad Thai,1
+M,1.67,69,24.67,Pad Thai,3
+M,1.59,72,28.46,Pad Thai,1
+M,1.67,62,22.35,Pad Thai,3
+M,1.7,66,22.93,Pad Thai,3
+F,1.5,56,24.9,Pad Thai,1
+M,1.78,77,24.23,Pad Thai,2
+F,1.56,47,19.29,Pad Thai,8
+M,1.8,79,24.37,Pad Thai,3
+M,1.82,73,22.01,Pad Thai,2
+F,1.63,60,22.68,Pad Thai,3
+M,1.74,75,24.74,Pad Thai,2
+F,1.61,52,20.14,Pad Thai,5
+M,1.72,64,21.67,Pad Thai,4
+F,1.63,60,22.52,Pad Thai,2
+F,1.61,51,19.68,Pad Thai,8
+F,1.56,46,18.9,Pad Thai,9
+F,1.69,59,20.6,Pad Thai,6
+F,1.55,48,19.9,Pad Thai,9
+M,1.8,68,21.01,Pad Thai,5
+F,1.57,48,19.5,Pad Thai,8
+F,1.65,45,16.51,Pad Thai,7
+F,1.56,50,20.46,Pad Thai,6
+M,1.78,66,20.8,Pad Thai,4
+F,1.58,46,18.31,Pad Thai,7
+M,1.61,79,30.4,Pad Thai,1
+F,1.59,59,23.36,Pad Thai,2
+M,1.78,65,20.48,Pad Thai,6
+M,1.8,70,21.7,Pad Thai,5
+M,1.83,75,22.33,Pad Thai,3
+F,1.6,45,17.49,Pad Thai,9
+F,1.7,53,18.43,Pad Thai,8
+F,1.53,57,24.35,Pad Thai,1
+M,1.81,65,19.79,Pad Thai,5
+F,1.49,50,22.63,Pad Thai,3
+M,1.84,76,22.56,Pad Thai,2
+M,1.83,77,22.9,Pad Thai,2
+F,1.69,58,20.4,Pad Thai,5
+F,1.69,50,17.59,Pad Thai,7
+F,1.5,58,25.73,Pad Thai,1
+F,1.68,59,20.9,Pad Thai,5
+M,1.68,61,21.65,Pad Thai,5
+M,1.78,64,20.14,Pad Thai,5
+F,1.62,55,20.85,Pad Thai,6
+M,1.67,74,26.39,Pad Thai,1
+F,1.56,52,21.42,Pad Thai,5
+F,1.63,57,21.45,Pad Thai,5
+F,1.51,52,22.72,Pad Thai,4
+M,1.76,66,21.23,Pad Thai,4
+M,1.79,75,23.52,Pad Thai,2
+M,1.64,77,28.8,Pad Thai,1
+M,1.78,70,22.09,Pad Thai,2
+F,1.53,53,22.7,Pad Thai,1
+M,1.7,74,25.72,Pad Thai,1
+M,1.76,75,24.22,Pad Thai,3
+M,1.6,60,23.44,Pad Thai,2
+F,1.59,60,23.88,Pad Thai,1
+F,1.68,56,19.79,Pad Thai,8
+F,1.59,48,18.99,Pad Thai,9
+M,1.82,78,23.58,Pad Thai,3
+M,1.71,77,26.41,Pad Thai,1
+M,1.7,71,24.57,Pad Thai,2
+F,1.61,54,20.93,Pad Thai,5
+F,1.56,49,20.02,Pad Thai,6
+F,1.62,47,17.81,Pad Thai,7
+M,1.74,60,19.71,Pad Thai,6
+F,1.61,53,20.46,Pad Thai,5
+F,1.56,54,22.29,Pad Thai,2
+F,1.56,49,20.26,Pad Thai,6
+M,1.59,65,25.75,Pad Thai,1
+F,1.53,50,21.25,Pad Thai,5
+M,1.65,76,27.93,Pad Thai,1
+F,1.49,48,21.59,Pad Thai,6
+F,1.66,60,21.86,Pad Thai,6
+M,1.69,63,22.09,Pad Thai,3
+F,1.65,57,21.01,Pad Thai,6
+M,1.66,79,28.59,Pad Thai,1
+F,1.64,56,20.93,Pad Thai,5
+M,1.65,71,26.02,Pad Thai,1
+F,1.55,55,22.81,Pad Thai,1
+F,1.51,47,20.74,Pad Thai,5
+M,1.61,64,24.62,Pad Thai,2
+F,1.64,52,19.37,Pad Thai,8
+F,1.53,52,22.2,Pad Thai,2
+F,1.54,47,19.69,Pad Thai,7
+M,1.6,62,24.27,Pad Thai,2
+M,1.66,67,24.37,Pad Thai,2
+F,1.64,47,17.42,Pad Thai,8
+M,1.82,80,24.1,Pad Thai,2
+M,1.59,63,25.04,Pad Thai,1
+F,1.65,56,20.53,Pad Thai,6
+M,1.81,72,21.94,Pad Thai,6
+M,1.69,68,23.91,Pad Thai,2
+F,1.6,49,19.1,Pad Thai,7
+F,1.65,45,16.59,Pad Thai,9
+F,1.61,57,21.91,Pad Thai,6
+M,1.75,61,20.02,Pad Thai,6
+F,1.68,46,16.27,Pad Thai,9
+M,1.81,79,24.06,Pad Thai,2
+M,1.6,68,26.65,Pad Thai,1
+F,1.65,45,16.46,Pad Thai,7
+F,1.63,53,19.86,Pad Thai,9
+F,1.62,58,22.14,Pad Thai,2
+F,1.51,48,21.14,Pad Thai,5
+M,1.62,68,25.8,Pad Thai,1
+F,1.48,53,24.1,Pad Thai,1
+F,1.58,55,22,Pad Thai,5
+M,1.79,64,20.07,Pad Thai,4
+F,1.65,50,18.31,Pad Thai,9
+F,1.58,59,23.58,Pad Thai,1
+F,1.54,46,19.27,Pad Thai,9
+M,1.59,72,28.4,Pad Thai,1
+M,1.65,68,24.99,Pad Thai,3
+F,1.6,53,20.68,Pad Thai,5
+F,1.61,56,21.61,Pad Thai,6
+M,1.59,76,30.06,Pad Thai,1
+F,1.57,55,22.39,Pad Thai,2
+F,1.53,55,23.38,Pad Thai,4
+M,1.75,78,25.42,Pad Thai,1
+M,1.59,71,28.08,Pad Thai,1
+M,1.83,72,21.6,Pad Thai,5
+F,1.5,45,20.1,Pad Thai,5
+F,1.51,48,21.02,Pad Thai,5
+F,1.55,48,19.86,Pad Thai,9
+F,1.57,57,23.1,Pad Thai,3
+F,1.57,60,24.28,Pad Thai,1
+F,1.47,55,25.3,Pad Thai,1
+F,1.6,49,19.09,Pad Thai,9
+M,1.82,74,22.39,Pad Thai,2
+F,1.56,54,22.19,Pad Thai,4
+F,1.66,50,18.24,Pad Thai,7
+M,1.83,66,19.63,Pad Thai,4
+M,1.69,79,27.53,Pad Thai,1
+M,1.71,70,23.8,Pad Thai,3
+F,1.57,52,20.98,Pad Thai,6
+F,1.6,54,21.15,Pad Thai,5
+F,1.69,53,18.47,Pad Thai,9
+M,1.71,60,20.56,Pad Thai,4
+F,1.61,49,18.91,Pad Thai,7
+F,1.69,48,16.77,Pad Thai,8
+F,1.7,59,20.48,Pad Thai,6
+F,1.5,56,24.92,Pad Thai,1
+M,1.78,62,19.63,Pad Thai,5
+M,1.61,76,29.22,Pad Thai,1
+F,1.55,59,24.42,Pad Thai,1
+M,1.83,63,18.9,Pad Thai,5
+F,1.5,45,19.88,Pad Thai,7
+M,1.8,74,22.96,Pad Thai,2
+M,1.73,68,22.68,Pad Thai,2
+M,1.76,76,24.65,Pad Thai,3
+F,1.68,58,20.6,Pad Thai,5
+F,1.59,55,21.87,Pad Thai,6
+M,1.64,65,24.06,Pad Thai,3
+M,1.79,73,22.84,Pad Thai,3
+F,1.7,55,19.12,Pad Thai,7
+F,1.64,56,20.82,Pad Thai,6
+F,1.64,49,18.19,Pad Thai,8
+M,1.65,74,27.18,Pad Thai,1
+F,1.7,60,20.88,Pad Thai,6
+M,1.69,79,27.6,Pad Thai,1
+F,1.48,52,23.79,Pad Thai,1
+M,1.79,73,22.86,Pad Thai,2
+M,1.82,61,18.51,Pad Thai,6
+F,1.67,58,20.68,Pad Thai,5
+M,1.65,79,29.09,Pad Thai,1
+M,1.69,70,24.52,Pad Thai,2
+M,1.72,70,23.53,Pad Thai,2
+M,1.6,72,28.18,Pad Thai,1
+F,1.49,55,24.78,Pad Thai,1
+F,1.56,53,21.83,Pad Thai,6
+F,1.54,58,24.49,Pad Thai,1
+M,1.77,74,23.61,Pad Thai,2
+F,1.66,47,17.14,Pad Thai,7
+F,1.54,50,21.17,Pad Thai,6
+F,1.69,48,16.78,Pad Thai,8
+M,1.77,70,22.36,Pad Thai,3
+M,1.8,62,19.22,Pad Thai,6
+F,1.53,50,21.33,Pad Thai,6
+F,1.67,47,16.86,Pad Thai,9
+M,1.63,73,27.4,Pad Thai,1
+M,1.62,60,22.82,Pad Thai,3
+M,1.68,77,27.22,Pad Thai,1
+M,1.62,63,23.93,Pad Thai,2
+M,1.59,74,29.4,Pad Thai,1
+M,1.68,70,24.69,Pad Thai,3
+F,1.69,52,18.1,Pad Thai,7
+M,1.78,63,19.96,Pad Thai,4
+M,1.78,67,21.16,Pad Thai,5
+M,1.72,63,21.37,Pad Thai,4
+M,1.7,74,25.71,Pad Thai,1
+F,1.67,52,18.67,Pad Thai,8
+F,1.6,57,22.27,Pad Thai,1
+F,1.56,57,23.55,Pad Thai,1
+M,1.7,71,24.56,Pad Thai,3
+F,1.65,49,18.02,Pad Thai,9
+M,1.71,79,27,Pad Thai,1
+M,1.78,65,20.49,Pad Thai,4
+M,1.81,76,23.1,Pad Thai,2
+F,1.68,52,18.33,Pad Thai,9
+F,1.5,51,22.7,Pad Thai,3
+M,1.78,76,23.95,Pad Thai,2
+M,1.69,78,27.16,Pad Thai,1
+M,1.58,60,23.89,Pad Thai,2
+F,1.61,46,17.66,Pad Thai,9
+F,1.53,45,19.3,Pad Thai,8
+M,1.81,72,22,Pad Thai,5
+M,1.65,73,26.95,Pad Thai,1
+F,1.63,54,20.23,Pad Thai,5
+M,1.71,61,20.83,Pad Thai,6
+M,1.76,71,22.98,Pad Thai,2
+F,1.66,59,21.47,Pad Thai,5
+M,1.77,69,22.03,Pad Thai,3
+M,1.59,71,28.04,Pad Thai,1
+F,1.57,50,20.3,Pad Thai,6
+M,1.79,68,21.22,Pad Thai,4
+F,1.64,45,16.8,Pad Thai,8
+M,1.76,75,24.23,Pad Thai,2
+F,1.57,49,19.78,Pad Thai,8
+M,1.63,67,25.28,Pad Thai,1
+M,1.64,73,27.29,Pad Thai,1
+M,1.83,75,22.49,Pad Thai,3
+F,1.56,53,21.67,Pad Thai,5
+M,1.66,62,22.4,Pad Thai,2
+F,1.5,48,21.41,Pad Thai,5
+M,1.74,76,25.15,Pad Thai,1
+M,1.76,77,24.83,Pad Thai,3
+M,1.82,78,23.61,Pad Thai,2
+F,1.57,60,24.35,Pad Thai,1
+M,1.79,62,19.32,Pad Thai,6
+F,1.61,56,21.6,Pad Thai,6
+M,1.67,69,24.79,Pad Thai,2
+F,1.6,58,22.78,Pad Thai,4
+F,1.69,48,16.75,Pad Thai,9
+F,1.67,52,18.57,Pad Thai,7
+M,1.75,70,22.75,Pad Thai,3
+F,1.62,51,19.33,Pad Thai,7
+M,1.76,74,24,Pad Thai,3
+M,1.65,71,26.05,Pad Thai,1
