@@ -1,7 +1,9 @@
+from Sci_Thai import Sci_Thai
+
+
 class ML_Controller:
     def __init__(self):
-        self.model = SCI_THAI("FAKEDATA.CSV")
-
+        self.model = Sci_Thai("sci_thaiDB.csv")
 
     def processUserData(self, gender, weight, height, fooditem):
         output_gender = -1
@@ -21,9 +23,9 @@ class ML_Controller:
             output_fooditem = 2
 
 
-        return [[output_fooditem, weight, height, output_gender, bmi]]
+        return [[output_gender, weight, height, bmi, output_fooditem]]
 
-    def provideReccomendation(self, gender, weight, height, fooditem):
+    def provideRecommendation(self, gender, weight, height, fooditem):
         user_data = self.processUserData(gender, weight, height, fooditem)
         prediction = self.model.predict(user_data)
         if(prediction <= 6 and prediction >= 4):

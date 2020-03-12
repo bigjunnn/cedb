@@ -3,7 +3,8 @@ from sklearn import preprocessing
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 
-class SCI_THAI:
+
+class Sci_Thai:
     def __init__(self, data_path):
         df = pd.read_csv(data_path)
         # Convert categorical to numerical values
@@ -13,7 +14,7 @@ class SCI_THAI:
 
         # Setting of the target column and predictors
         target_column = ['Fullness']
-        predictors = list(set(list(df.columns))-set(target_column))
+        predictors = ['Gender', 'Weight', 'Height', 'BMI Index', 'Food']
 
         # Create training and data sets
         X = df[predictors].values
