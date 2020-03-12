@@ -1,4 +1,5 @@
 import telebot
+from telebot import types
 import os
 # from dotenv import load_dotenv
 
@@ -75,22 +76,66 @@ def start_message(message):
 @bot.message_handler(commands = ['edit'])
 def edit_details(message):
   #TODO retrieve current details from database 
-  text = """"Your current details are: 
+  details = """"Your current details are: 
           Age: 
           Gender: 
           Height: 
           Weight: 
           
+          To edit your details, reply with the attributes you want changed.\n
+          For example, if you want to change your height to 160 cm and weight to 50kg, you reply with this:
+          
+          height: 160
+          weight: 50
+          
           Type /back if you do not want to edit your details."""
   #display current details 
-  bot.reply_to(message, text)
-  
-  #TODO how do i get user input 
+  bot.send_message(chat_id = message.chat.id, text = details)
+  #get user input
+  msg = bot.reply_to(message, text)
+  replies = msg.chat.text.split("\n")
+  for reply in replies: 
+    if reply[:3] == "Age":
+      #TODO update age 
+      global user_info 
+      user_info["age"] = reply[3:]
+      bot.send_message(chat_id = message.chat.id, text = "Age updated.")
+    elif reply[:6] == "Gender":
+      #update gender 
+      user_info["gender"] = reply[6:]
+      bot.send_message(chat_id = message.chat.id, text = "Gender updated.")
+    elif reply[:6] == "Height":
+      #update height 
+      user_info["height"] = reply[6:]
+      bot.send_message(chat_id = message.chat.id, text = "Height updated.")
+    elif reply[:6] == "Weight":
+      #update weight 
+      user_info["weight"] = reply[6:]
+      bot.send_message(chat_id = message.chat.id, text = "Weight updated.")
+    elif msg['text'][:5] == "/back":
+      bot.send_message(chat_id = message.chat.id, text = "Editing details complete. Please do something else. Type '/help' if you are not sure what to do.")
+    else: 
+      bot.send_message(chat_id = message.chat.id, text = "Invalid command.")
+   
   #TODO after editing details update database and then reply user to say that details 
   #successfully changed 
   
 
-#\report 
+stores = ["Science Canteen"]
+#report
+@bot.message_handler(commands = ['report'])
+def select_canteen(message):
+  chat_id = message.chat.id
+  select_canteen_prompt = "You have chosen to report about a store's food portions. Select the canteen you ate from:\n"
+  options = types.ReplyKeyboardMarkup()
+  for store in stores: 
+    options.row(types.KeyboardButton(store))
+  
+  canteen = bot.reply_to(message, select_canteen_prompt, reply_markup=options)
+  bot.register_next_step_handler(canteen, process_canteens)
+  # TODO implement a method called process_canteens
+
+# help message
 @bot.message_handler(commands = ['help'])
 def launch_report(message):
   help_message = ""
