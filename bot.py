@@ -12,11 +12,11 @@ API_KEY = os.environ['API_KEY']
 bot = telebot.TeleBot(API_KEY)
 
 commands = {  # command description used in the "help" command
-    'start'       : 'If you are a first time user of this bot, register yourself with this command!',
-    'edit'        : 'Edits your user details',
-    'recommend'   : 'Recommends food portion changes about meals in a canteen',
-    'logmeal'     : 'Record down a meal that you had.',
-    'help'        : 'Gives you information about the available commands',
+    'start': 'If you are a first time user of this bot, register yourself with this command!',
+    'edit': 'Edits your user details',
+    'recommend': 'Recommends food portion changes about meals in a canteen',
+    'logmeal': 'Record down a meal that you had.',
+    'help': 'Gives you information about the available commands',
     'report': 'Have feedback about food portions in NUS Canteens? Use this command to report about them!'
 }
 
