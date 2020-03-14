@@ -39,6 +39,17 @@ class User:
         " cm\nWeight: " + str(self.weight) + "kg"
         return details
 
+# Configure the canteens
+def initialiseCanteens():
+
+    # Add Science Canteen + Stores
+    scienceStores = ['Thai Food', 'Noodles']
+    canteens['Frontier @ Science'] = scienceStores
+
+     # Add Arts Canteen + Stores
+    artsStores = ['Chicken Rice', 'Mala']
+    canteens['The Deck @ Arts'] = artsStores
+
 # Helper methods to for the start command
 
 # get age
