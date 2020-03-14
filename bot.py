@@ -21,6 +21,23 @@ commands = {  # command description used in the "help" command
 }
 
 user_info = {}
+users = {}
+canteens = {}
+
+
+class User:
+    def __init__(self, id):
+        self.id = id
+        self.age = None
+        self.gender = None
+        self.height = None
+        self.weight = None
+
+    def __str__(self):
+        details = "Chat ID: " + str(self.id) + "\nAge: " + str(self.age) + " years old\n" + "Gender: " + self.gender + \
+        "\nHeight: " + str(self.height) + \
+        " cm\nWeight: " + str(self.weight) + "kg"
+        return details
 
 # Helper methods to for the start command
 
