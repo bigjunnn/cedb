@@ -241,5 +241,5 @@ def launch_report(message):
     
   msg = bot.reply_to(message, help_message)
   
-  
+initialiseCanteens()  
 bot.polling()
