@@ -110,14 +110,20 @@ def process_height_step(message):
 
 # get weight
 def process_weight_step(message):
-    global user_info
     chat_id = message.chat.id
     weight = message.text
-    user_info["weight"] = weight
+    user = users[chat_id]
 
-    details = "Age: " + user_info["age"] + " years old\n" + "Gender: " + user_info["gender"] + "\nHeight: " + user_info["height"] + " cm\nWeight: " + user_info["weight"] + "kg"
-    msg = bot.reply_to(message, 'Great! You are now registered in our database with the following details:\n' + details)
-    user_info = {}
+    # Validation for weight
+    if not weight.isdigit():
+        msg = bot.reply_to(
+            message, 'Weight should be a positive number. Please try again with valid values.')
+        bot.register_next_step_handler(msg, process_weight_step)
+        return
+
+    user.weight = weight
+
+    msg = bot.reply_to(message, 'Great! You are now registered in our database with the following details:\n' + str(user))
 
 
   
