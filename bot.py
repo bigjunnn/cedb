@@ -92,10 +92,19 @@ def process_gender_step(message):
 
 # get height
 def process_height_step(message):
-    global user_info
     chat_id = message.chat.id
     height = message.text
-    user_info["height"] = height
+    user = users[chat_id]
+
+    # Validation for height
+    if not height.isdigit():
+        msg = bot.reply_to(
+            message, 'Height should be a positive number. Please try again with valid values.')
+        bot.register_next_step_handler(msg, process_height_step)
+        return
+    
+    user.height = height
+
     msg = bot.reply_to(message, 'What is your weight, in kg?')
     bot.register_next_step_handler(msg, process_weight_step)
 
