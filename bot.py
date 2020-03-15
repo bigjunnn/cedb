@@ -54,12 +54,28 @@ def initialiseCanteens():
 
 # get age
 def process_age_step(message):
-    global user_info
-    chat_id = message.chat.id
-    age = message.text
-    user_info["age"] = age
-    msg = bot.reply_to(message, 'Are you male or female (M/F)?')
-    bot.register_next_step_handler(msg, process_gender_step)
+  chat_id = message.chat.id
+  age = message.text
+  user = User(chat_id)
+  users[chat_id] = user
+
+  # Validation for age
+  if not age.isdigit():
+      msg = bot.reply_to(
+          message, 'Age should be a positive number! Please try again with valid values.')
+      bot.register_next_step_handler(msg, process_age_step)
+      return
+
+  user = users[chat_id]
+  user.age = age
+
+  # Buttons to select Male or Female
+  genderKeyBoard = types.ReplyKeyboardMarkup(resize_keyboard = True, one_time_keyboard=True, row_width=2)
+  genderKeyBoard.add('Male', 'Female')
+
+  msg = bot.reply_to(message, 'What is your gender', reply_markup=genderKeyBoard)
+
+  bot.register_next_step_handler(msg, process_gender_step)
 
 # get gender
 def process_gender_step(message):
