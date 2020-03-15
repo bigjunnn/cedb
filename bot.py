@@ -210,6 +210,12 @@ def edit_details(message):
   #TODO after editing details update database and then reply user to say that details 
   #successfully changed 
   
+# recommend
+@bot.message_handler(commands=['recommend'])
+def recommend_message(message):
+    msg = bot.reply_to(
+        message, "Let's start recommending you some food!")
+    process_canteens(message)
 
 stores = ["Science Canteen"]
 #report
