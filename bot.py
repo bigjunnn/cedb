@@ -125,6 +125,32 @@ def process_weight_step(message):
 
     msg = bot.reply_to(message, 'Great! You are now registered in our database with the following details:\n' + str(user))
 
+# get canteens
+def process_canteens(message):
+
+    # Buttons to select canteens
+    # TODO Find a way to add canteens w/o having to hardcode
+    canteenKeyBoard = types.ReplyKeyboardMarkup(resize_keyboard = True, one_time_keyboard=True, row_width=2)
+    canteenKeyBoard.add('Frontier @ Science', 'The Deck @ Arts')
+
+    msg = bot.reply_to(message, 'Where are you eating today?', reply_markup=canteenKeyBoard)
+    bot.register_next_step_handler(msg, process_stores)
+
+# get store
+def process_stores(message):
+
+    selectedCanteen = message.text
+    stores = canteens[selectedCanteen]
+
+    # Buttons to select stores
+    # TODO Find a way to add stores w/o having to hardcode
+    storesKeyBoard = types.ReplyKeyboardMarkup(resize_keyboard = True, one_time_keyboard=True, row_width=2)
+    if (selectedCanteen == "Frontier @ Science"):
+        storesKeyBoard.add('Thai Food', 'Noodles')
+    else:
+        storesKeyBoard.add('Chicken Rice', 'Mala')
+
+    msg = bot.reply_to(message, 'Which store are you eating from?', reply_markup=storesKeyBoard)
 
   
 #start 
