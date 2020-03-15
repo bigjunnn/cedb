@@ -20,7 +20,6 @@ commands = {  # command description used in the "help" command
     'report': 'Have feedback about food portions in NUS Canteens? Use this command to report about them!'
 }
 
-user_info = {}
 users = {}
 canteens = {}
 
@@ -160,55 +159,23 @@ def start_message(message):
         message, "We see that you are a first timer. We need to know some details from you. How old are you?")
     bot.register_next_step_handler(msg, process_age_step)
   
-  
-
-#edit
-@bot.message_handler(commands = ['edit'])
+# edit
+@bot.message_handler(commands=['edit'])
 def edit_details(message):
-  #TODO retrieve current details from database 
-  details = """"Your current details are: 
+    # TODO retrieve current details from database
+    text = """"Your current details are: 
           Age: 
           Gender: 
           Height: 
           Weight: 
           
-          To edit your details, reply with the attributes you want changed.\n
-          For example, if you want to change your height to 160 cm and weight to 50kg, you reply with this:
-          
-          height: 160
-          weight: 50
-          
           Type /back if you do not want to edit your details."""
-  #display current details 
-  bot.send_message(chat_id = message.chat.id, text = details)
-  #get user input
-  msg = bot.reply_to(message, text)
-  replies = msg.chat.text.split("\n")
-  for reply in replies: 
-    if reply[:3] == "Age":
-      #TODO update age 
-      global user_info 
-      user_info["age"] = reply[3:]
-      bot.send_message(chat_id = message.chat.id, text = "Age updated.")
-    elif reply[:6] == "Gender":
-      #update gender 
-      user_info["gender"] = reply[6:]
-      bot.send_message(chat_id = message.chat.id, text = "Gender updated.")
-    elif reply[:6] == "Height":
-      #update height 
-      user_info["height"] = reply[6:]
-      bot.send_message(chat_id = message.chat.id, text = "Height updated.")
-    elif reply[:6] == "Weight":
-      #update weight 
-      user_info["weight"] = reply[6:]
-      bot.send_message(chat_id = message.chat.id, text = "Weight updated.")
-    elif msg['text'][:5] == "/back":
-      bot.send_message(chat_id = message.chat.id, text = "Editing details complete. Please do something else. Type '/help' if you are not sure what to do.")
-    else: 
-      bot.send_message(chat_id = message.chat.id, text = "Invalid command.")
-   
-  #TODO after editing details update database and then reply user to say that details 
-  #successfully changed 
+    # display current details
+    bot.reply_to(message, text)
+
+    # TODO how do i get user input
+    # TODO after editing details update database and then reply user to say that details
+    # successfully changed
   
 # recommend
 @bot.message_handler(commands=['recommend'])
