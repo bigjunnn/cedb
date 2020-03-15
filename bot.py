@@ -153,11 +153,12 @@ def process_stores(message):
     msg = bot.reply_to(message, 'Which store are you eating from?', reply_markup=storesKeyBoard)
 
   
-#start 
-@bot.message_handler(commands = ['start'])
+# start
+@bot.message_handler(commands=['start'])
 def start_message(message):
-  msg = bot.reply_to(message, "We see that you are a first timer. We need to know some details from you. How old are you?")
-  bot.register_next_step_handler(msg, process_age_step)
+    msg = bot.reply_to(
+        message, "We see that you are a first timer. We need to know some details from you. How old are you?")
+    bot.register_next_step_handler(msg, process_age_step)
   
   
 
