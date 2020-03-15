@@ -79,12 +79,16 @@ def process_age_step(message):
 
 # get gender
 def process_gender_step(message):
-    global user_info
     chat_id = message.chat.id
     gender = message.text
-    user_info["gender"] = gender
-    msg = bot.reply_to(message, 'How tall are you, in centimetres? Reply with a number, eg 145 for 145 cm.')
+    user = users[chat_id]
+    if (gender == u'Male') or (gender == u'Female'):
+        user.gender = gender
+    
+    msg = bot.reply_to(
+        message, 'How tall are you, in centimetres? Reply with a number, eg 145 for 145 cm.')
     bot.register_next_step_handler(msg, process_height_step)
+
 
 # get height
 def process_height_step(message):
