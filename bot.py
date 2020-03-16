@@ -1,7 +1,9 @@
 import telebot
 from telebot import types
 import os
+from models import *
 # from dotenv import load_dotenv
+from ML_Controller import *
 
 #API key for deployment
 API_KEY = os.environ['API_KEY']
@@ -20,23 +22,15 @@ commands = {  # command description used in the "help" command
     'report': 'Have feedback about food portions in NUS Canteens? Use this command to report about them!'
 }
 
+# keyboards
+canteenKeyBoard = types.ReplyKeyboardMarkup(resize_keyboard = True, one_time_keyboard=True, row_width=2)
+canteenKeyBoard.add('Frontier @ Science', 'The Deck @ Arts')
+
+# ML model
+ML_Model = ML_Controller()
+
 users = {}
 canteens = {}
-
-
-class User:
-    def __init__(self, id):
-        self.id = id
-        self.age = None
-        self.gender = None
-        self.height = None
-        self.weight = None
-
-    def __str__(self):
-        details = "Chat ID: " + str(self.id) + "\nAge: " + str(self.age) + " years old\n" + "Gender: " + self.gender + \
-        "\nHeight: " + str(self.height) + \
-        " cm\nWeight: " + str(self.weight) + "kg"
-        return details
 
 # Configure the canteens
 def initialiseCanteens():
@@ -49,7 +43,22 @@ def initialiseCanteens():
     artsStores = ['Chicken Rice', 'Mala']
     canteens['The Deck @ Arts'] = artsStores
 
-# Helper methods to for the start command
+
+# A method to configure the keyboard indicating store names
+def configureStoresKeyboard(selectedCanteen):
+    storesKeyBoard = types.ReplyKeyboardMarkup(resize_keyboard = True, one_time_keyboard=True, row_width=2)
+    if (selectedCanteen == "Frontier @ Science"):
+        storesKeyBoard.add('Thai Food', 'Noodles')
+    else:
+        storesKeyBoard.add('Chicken Rice', 'Mala')
+    return storesKeyBoard
+
+# start
+@bot.message_handler(commands=['start'])
+def start_message(message):
+    msg = bot.reply_to(
+        message, "We see that you are a first timer. We need to know some details from you. How old are you?")
+    bot.register_next_step_handler(msg, process_age_step)
 
 # get age
 def process_age_step(message):
@@ -102,7 +111,7 @@ def process_height_step(message):
         bot.register_next_step_handler(msg, process_height_step)
         return
     
-    user.height = height
+    user.height = float(height) / 100
 
     msg = bot.reply_to(message, 'What is your weight, in kg?')
     bot.register_next_step_handler(msg, process_weight_step)
@@ -120,18 +129,16 @@ def process_weight_step(message):
         bot.register_next_step_handler(msg, process_weight_step)
         return
 
-    user.weight = weight
+    user.weight = int(weight, 10)
 
     msg = bot.reply_to(message, 'Great! You are now registered in our database with the following details:\n' + str(user))
 
+
+
 # get canteens
 def process_canteens(message):
-
     # Buttons to select canteens
     # TODO Find a way to add canteens w/o having to hardcode
-    canteenKeyBoard = types.ReplyKeyboardMarkup(resize_keyboard = True, one_time_keyboard=True, row_width=2)
-    canteenKeyBoard.add('Frontier @ Science', 'The Deck @ Arts')
-
     msg = bot.reply_to(message, 'Where are you eating today?', reply_markup=canteenKeyBoard)
     bot.register_next_step_handler(msg, process_stores)
 
@@ -140,24 +147,10 @@ def process_stores(message):
 
     selectedCanteen = message.text
     stores = canteens[selectedCanteen]
-
-    # Buttons to select stores
     # TODO Find a way to add stores w/o having to hardcode
-    storesKeyBoard = types.ReplyKeyboardMarkup(resize_keyboard = True, one_time_keyboard=True, row_width=2)
-    if (selectedCanteen == "Frontier @ Science"):
-        storesKeyBoard.add('Thai Food', 'Noodles')
-    else:
-        storesKeyBoard.add('Chicken Rice', 'Mala')
+    storesKeyBoard = configureStoresKeyboard(selectedCanteen)
 
     msg = bot.reply_to(message, 'Which store are you eating from?', reply_markup=storesKeyBoard)
-
-  
-# start
-@bot.message_handler(commands=['start'])
-def start_message(message):
-    msg = bot.reply_to(
-        message, "We see that you are a first timer. We need to know some details from you. How old are you?")
-    bot.register_next_step_handler(msg, process_age_step)
   
 # edit
 @bot.message_handler(commands=['edit'])
@@ -180,19 +173,39 @@ def edit_details(message):
 # recommend
 @bot.message_handler(commands=['recommend'])
 def recommend_message(message):
-    msg = bot.reply_to(
-        message, "Let's start recommending you some food!")
-    process_canteens(message)
+    msg = bot.reply_to(message, 
+        "Let's start recommending you some food! Where are you eating today?", 
+        reply_markup=canteenKeyBoard)
+    bot.register_next_step_handler(msg, process_stall)
 
-stores = ["Science Canteen"]
+def process_stall(message):
+    selectedCanteen = message.text
+    stores = canteens[selectedCanteen]
+    storesKeyBoard = types.ReplyKeyboardMarkup(resize_keyboard = True, one_time_keyboard=True, row_width=2)
+    if (selectedCanteen == "Frontier @ Science"):
+        storesKeyBoard.add('Thai Food', 'Noodles')
+    else:
+        storesKeyBoard.add('Chicken Rice', 'Mala')
+    msg = bot.reply_to(message, 'Which store are you eating from?', reply_markup=storesKeyBoard)
+    bot.register_next_step_handler(msg, recommend_food)
+
+def recommend_food(message):
+    food_item = message.text
+    chat_id = message.chat.id
+    user = users[chat_id]
+
+    gender = user.gender 
+    weight = user.weight
+    height = user.height
+    recommendation = ML_Model.provideRecommendation(gender, weight, height, food_item)
+    bot.reply_to(message, recommendation)
+
+
 #report
 @bot.message_handler(commands = ['report'])
 def select_canteen(message):
   chat_id = message.chat.id
   select_canteen_prompt = "You have chosen to report about a store's food portions. Select the canteen you ate from:\n"
-  options = types.ReplyKeyboardMarkup()
-  for store in stores: 
-    options.row(types.KeyboardButton(store))
   
   canteen = bot.reply_to(message, select_canteen_prompt, reply_markup=options)
   bot.register_next_step_handler(canteen, process_canteens)
