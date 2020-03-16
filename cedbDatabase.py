@@ -19,5 +19,3 @@ class cedbDatabase:
             return False
         else:
             return True
-        
-

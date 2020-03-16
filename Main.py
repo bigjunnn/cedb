@@ -2,4 +2,12 @@ from ML_Controller import ML_Controller
 
 if __name__ == "__main__":
     controller = ML_Controller()
-    print(controller.provideRecommendation("F", 60, 1.5, "Pad Thai"))
+
+    while True:
+        gender = str(input("Male or Female"))
+        height = int(input("Height in cm"))
+        weight = int(input("Weight in kg"))
+        food = str(input("Basil Rice/Pineapple Fried Rice/Pad Thai"))
+        fullness = int(input("fullness"))
+
+        controller.addUserReport(gender, height, weight, food, fullness)
