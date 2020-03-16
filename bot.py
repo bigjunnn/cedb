@@ -9,8 +9,8 @@ from ML_Controller import *
 #API key for deployment
 # API_KEY = os.environ['API_KEY']
 
-load_dotenv()
-API_KEY = os.getenv("API_KEY")
+# load_dotenv()
+API_KEY = "1097463509:AAFjiWHPU7HHSyxPh3thej8_Q_4TobLF6ag"
 
 bot = telebot.TeleBot(API_KEY)
 
@@ -237,8 +237,10 @@ def process_store(message):
     chat_id = message.chat.id
     report = reports[chat_id]
     report.store = store
+
+    foodKeyBoard = configureFoodKeyboard(store)
     msg = bot.reply_to(message, 
-        "Which food item did you have?")
+        "Which food item did you have?", reply_markup=foodKeyBoard)
     bot.register_next_step_handler(msg, report_food)
 
 def report_food(message):
@@ -247,8 +249,7 @@ def report_food(message):
     selectedStore = report.store
     report.food_item = message.text
 
-    foodKeyBoard = configureFoodKeyboard(selectedStore)
-    msg = bot.reply_to(message, 'From a scale of 1 to 10, rate how full you are after eating the food. 1 means too little food, 10 means too much.', reply_markup=foodKeyBoard)
+    msg = bot.reply_to(message, 'From a scale of 1 to 10, rate how full you are after eating the food. 1 means too little food, 10 means too much.')
     bot.register_next_step_handler(msg, process_fullness_rating)
 
 
@@ -261,7 +262,7 @@ def process_fullness_rating(message):
     if fullness_rating < 1 or fullness_rating > 10:
         msg = bot.reply_to(message, "The rating should be an integer from 1 to 10 (inclusive). Please rate again with valid values")
         bot.register_next_step_handler(msg, process_fullness_rating)
-
+        return
     
     bot.register_next_step_handler(message, process_report)
 

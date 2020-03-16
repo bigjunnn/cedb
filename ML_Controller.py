@@ -45,7 +45,7 @@ class ML_Controller:
         else:
             input_gender = 0
         
-        input_height = height/100
+        input_height = height
         input_food = self.transformFoodToInt(food)
 
         self.model.add_user_data(input_gender, input_height, weight, input_food, fullness)
