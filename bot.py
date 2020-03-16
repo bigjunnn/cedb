@@ -238,17 +238,17 @@ def process_store(message):
     report = reports[chat_id]
     report.store = store
     msg = bot.reply_to(message, 
-        "From a scale of 1 to 10, rate how full you are after eating the food. 1 means too little food, 10 means too much food.")
+        "Which food item did you have?")
     bot.register_next_step_handler(msg, report_food)
 
 def report_food(message):
     chat_id = message.chat.id
     report = reports[chat_id]
-    report.food_item = message.text
     selectedStore = report.store
+    report.food_item = message.text
 
     foodKeyBoard = configureFoodKeyboard(selectedStore)
-    msg = bot.reply_to(message, 'Which food item did you have?', reply_markup=foodKeyBoard)
+    msg = bot.reply_to(message, 'From a scale of 1 to 10, rate how full you are after eating the food. 1 means too little food, 10 means too much.', reply_markup=foodKeyBoard)
     bot.register_next_step_handler(msg, process_fullness_rating)
 
 
@@ -256,12 +256,13 @@ def process_fullness_rating(message):
     chat_id = message.chat.id
     report = reports[chat_id]
     fullness_rating = int(message.text, 10)
+    report.fullness_rating = fullness_rating
+
     if fullness_rating < 1 or fullness_rating > 10:
         msg = bot.reply_to(message, "The rating should be an integer from 1 to 10 (inclusive). Please rate again with valid values")
         bot.register_next_step_handler(msg, process_fullness_rating)
 
     
-    report.fullness_rating = fullness_rating
     bot.register_next_step_handler(message, process_report)
 
 def process_report(message):
