@@ -2,7 +2,7 @@ import telebot
 from telebot import types
 import os
 from models import *
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 from ML_Controller import *
 
 #API key for deployment
