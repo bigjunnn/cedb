@@ -7,9 +7,9 @@ class User:
         self.weight = None
 
     def __str__(self):
-        details = "Chat ID: " + str(self.id) + "\nAge: " + str(self.age) + " years old\n" + "Gender: " + self.gender + \
+        details = "Age: " + str(self.age) + " years old\n" + "Gender: " + self.gender + \
         "\nHeight: " + str(self.height) + \
-        " cm\nWeight: " + str(self.weight) + "kg"
+        " m\nWeight: " + str(self.weight) + "kg"
         return details
 
 class Report:

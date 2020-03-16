@@ -1,3 +1,5 @@
+from models import User
+
 class cedbDatabase:
     curr_database = {}
 
@@ -14,16 +16,8 @@ class cedbDatabase:
 
     def is_first_time_user(self, user_id):
         if user_id in self.curr_database:
-            return True
-        else:
             return False
-
-if __name__ == "__main__":
-    newDB = cedbDatabase
-
-    while True:
-        user_id = input("What's the user id")
-        user_info = input("His name?")
-        newDB.put(newDB, user_id, user_info)
-        print(newDB.get(newDB, user_id))
+        else:
+            return True
+        
 

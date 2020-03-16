@@ -31,11 +31,11 @@ class ML_Controller:
         if(prediction <= 6 and prediction >= 4):
             return "Just enough!"
         elif(prediction >= 2 and prediction < 4):
-            return "Might want to size up 1/2 a portion!"
+            return "Might want to size up 1/4 portion!"
         elif(prediction > 6 and prediction <= 8):
-            return "Might want to size down 1/2 a portion!"
+            return "Might want to size down 1/4 portion!"
         elif(prediction >= 0 and prediction <2):
-            return "Might want to size up 1 portion!"
+            return "Might want to size up 1/2 a portion!"
         elif(prediction > 8 and prediction <= 10):
-            return "Might want to size down 1 portion!"
+            return "Might want to size down 1/2 a portion!"
 
