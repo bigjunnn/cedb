@@ -29,7 +29,6 @@ canteenKeyBoard.add('Frontier @ Science', 'The Deck @ Arts')
 
 # ML model
 ML_Model = ML_Controller()
-
 users_DB = cedbDatabase()
 canteens = {}
 reports = {}
@@ -81,7 +80,7 @@ def start_message(message):
             message, "We see that you are a first timer. We need to know some details from you. How old are you?")
         bot.register_next_step_handler(msg, process_age_step)
     else:
-        msg = bot.reply_to(message, "To get started, use /recommend to get your food recommendation!")
+        msg = bot.reply_to(message, "Welcome back, use /recommend to get your food recommendation!")
 
 
 
@@ -234,13 +233,24 @@ def process_canteen(message):
 
 
 def process_store(message):
+    store = message.text
+    chat_id = message.chat.id
+    report = reports[chat_id]
+    report.store = store
+    msg = bot.reply_to(message, 
+        "From a scale of 1 to 10, rate how full you are after eating the food. 1 means too little food, 10 means too much food.")
+    bot.register_next_step_handler(msg, process_food)
+
+def process_food(message):
     food_item = message.text
     chat_id = message.chat.id
     report = reports[chat_id]
     report.store = food_item
-    msg = bot.reply_to(message, 
-        "From a scale of 1 to 10, rate how full you are after eating the food. 1 means too little food, 10 means too much food.")
+
+    foodKeyBoard = configureFoodKeyboard(selectedStore)
+    msg = bot.reply_to(message, 'Which food item did you have?', reply_markup=foodKeyBoard)
     bot.register_next_step_handler(msg, process_fullness_rating)
+
 
 def process_fullness_rating(message):
     chat_id = message.chat.id
@@ -257,6 +267,15 @@ def process_fullness_rating(message):
 def process_report(message):
     chat_id = message.chat.id
     report = reports[chat_id]
+    user = users_DB.get(chat_id)
+
+    gender = user.gender 
+    height = user.height
+    weight = user.weight
+    food_item = report.food_item
+    fullness = report.fullness_rating
+    ML_Model.addUserReport(gender, height, weight, food_item, fullness)
+
     bot.reply_to(message, "Thank you for making the following rating: \n" + str(report))
 
 # help message
