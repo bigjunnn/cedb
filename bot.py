@@ -239,13 +239,13 @@ def process_store(message):
     report.store = store
     msg = bot.reply_to(message, 
         "From a scale of 1 to 10, rate how full you are after eating the food. 1 means too little food, 10 means too much food.")
-    bot.register_next_step_handler(msg, process_food)
+    bot.register_next_step_handler(msg, report_food)
 
-def process_food(message):
-    food_item = message.text
+def report_food(message):
     chat_id = message.chat.id
     report = reports[chat_id]
-    report.store = food_item
+    report.food_item = message.text
+    selectedStore = report.store
 
     foodKeyBoard = configureFoodKeyboard(selectedStore)
     msg = bot.reply_to(message, 'Which food item did you have?', reply_markup=foodKeyBoard)
