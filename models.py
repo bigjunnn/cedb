@@ -16,6 +16,10 @@ class Report:
     def __init__(self, user_id):
         self.user_id = user_id
         self.canteen = None
-        self.gender = None
         self.store = None
         self.fullness_rating = None
+
+    def __str__(self):
+        details = "Canteen: {}\nStore: {}\nFullness Rating: {}\n".format(self.canteen, self.store, str(self.fullness_rating))
+        return details
+        
