@@ -2,14 +2,14 @@ import telebot
 from telebot import types
 import os
 from models import *
-# from dotenv import load_dotenv
+from dotenv import load_dotenv
 from ML_Controller import *
 
 #API key for deployment
-API_KEY = os.environ['API_KEY']
+# API_KEY = os.environ['API_KEY']
 
-# load_dotenv()
-# API_KEY = os.getenv("API_KEY")
+load_dotenv()
+API_KEY = os.getenv("API_KEY")
 
 bot = telebot.TeleBot(API_KEY)
 
@@ -237,5 +237,8 @@ def launch_report(message):
 
   msg = bot.reply_to(message, help_message)
   
-initialiseCanteens()  
-bot.polling()
+initialiseCanteens()
+try:  
+    bot.polling()
+except:
+    bot.polling()
