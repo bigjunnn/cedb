@@ -221,7 +221,7 @@ def process_fullness_rating(message):
 
     
     report.fullness_rating = fullness_rating
-    bot.register_next_step_handler(msg, process_report)
+    bot.register_next_step_handler(message, process_report)
 
 def process_report(message):
     chat_id = message.chat.id
