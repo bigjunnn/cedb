@@ -17,13 +17,3 @@ class cedbDatabase:
             return True
         else:
             return False
-
-if __name__ == "__main__":
-    newDB = cedbDatabase
-
-    while True:
-        user_id = input("What's the user id")
-        user_info = input("His name?")
-        newDB.put(newDB, user_id, user_info)
-        print(newDB.get(newDB, user_id))
-

@@ -6,19 +6,19 @@ from sklearn.model_selection import train_test_split
 
 class Sci_Thai:
     def __init__(self, data_path):
-        df = pd.read_csv(data_path)
+        self.df = pd.read_csv(data_path)
         # Convert categorical to numerical values
         le = preprocessing.LabelEncoder()
-        df['Food'] = le.fit_transform(df['Food'])
-        df['Gender'] = le.fit_transform(df['Gender'])
+        self.df['Food'] = le.fit_transform(self.df['Food'])
+        self.df['Gender'] = le.fit_transform(self.df['Gender'])
 
         # Setting of the target column and predictors
         target_column = ['Fullness']
         predictors = ['Gender', 'Weight', 'Height', 'BMI Index', 'Food']
 
         # Create training and data sets
-        X = df[predictors].values
-        y = df[target_column].values
+        X = self.df[predictors].values
+        y = self.df[target_column].values
 
         X_train, X_test, y_train, y_test = train_test_split(
             X, y, test_size=0.20, random_state=10)
@@ -28,23 +28,35 @@ class Sci_Thai:
     def predict(self, curr_values):
         return self.lr.predict(curr_values)
 
-    def retrain(self, datapath):
-        df = pd.read_csv(data_path)
+    def add_user_data(self, gender, height, weight, food, fullness):
+        curr_bmi = weight/pow(height, 2)
+        curr_data = pd.DataFrame({
+            "Gender" : [gender],
+            "Height" : [height],
+            "Weight" : [weight],
+            "BMI Index" : [curr_bmi],
+            "Food" : [food],
+            "Fullness" :[fullness]
+        })
+
+        self.df = self.df.append(curr_data)
+        print(self.df.tail(3))
+
+    def retrain(self):
         # Convert categorical to numerical values
         le = preprocessing.LabelEncoder()
-        df['Gender'] = le.fit_transform(df['Gender'])
-        df['Food'] = le.fit_transform(df['Food'])
+        self.df['Food'] = le.fit_transform(self.df['Food'])
+        self.df['Gender'] = le.fit_transform(self.df['Gender'])
 
         # Setting of the target column and predictors
         target_column = ['Fullness']
-        predictors = list(set(list(df.columns))-set(target_column))
+        predictors = ['Gender', 'Weight', 'Height', 'BMI Index', 'Food']
 
         # Create training and data sets
-        X = df[predictors].values
-        y = df[target_column].values
+        X = self.df[predictors].values
+        y = self.df[target_column].values
 
         X_train, X_test, y_train, y_test = train_test_split(
             X, y, test_size=0.20, random_state=10)
-
         self.lr = LinearRegression()
         self.lr.fit(X_train, y_train)
