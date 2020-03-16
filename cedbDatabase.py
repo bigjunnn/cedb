@@ -1,3 +1,5 @@
+from models import User
+
 class cedbDatabase:
     curr_database = {}
 
@@ -14,6 +16,6 @@ class cedbDatabase:
 
     def is_first_time_user(self, user_id):
         if user_id in self.curr_database:
-            return True
-        else:
             return False
+        else:
+            return True
