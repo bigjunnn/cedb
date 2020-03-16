@@ -43,7 +43,23 @@ def initialiseCanteens():
     artsStores = ['Chicken Rice', 'Mala']
     canteens['The Deck @ Arts'] = artsStores
 
-# Helper methods to for the start command
+
+# A method to configure the keyboard indicating store names
+def configureStoresKeyboard(selectedCanteen):
+    storesKeyBoard = types.ReplyKeyboardMarkup(resize_keyboard = True, one_time_keyboard=True, row_width=2)
+    if (selectedCanteen == "Frontier @ Science"):
+        storesKeyBoard.add('Thai Food', 'Noodles')
+    else:
+        storesKeyBoard.add('Chicken Rice', 'Mala')
+    return storesKeyBoard
+
+# start
+@bot.message_handler(commands=['start'])
+def start_message(message):
+    msg = bot.reply_to(
+        message, "We see that you are a first timer. We need to know some details from you. How old are you?")
+    bot.register_next_step_handler(msg, process_age_step)
+
 # get age
 def process_age_step(message):
   chat_id = message.chat.id
@@ -118,13 +134,6 @@ def process_weight_step(message):
     msg = bot.reply_to(message, 'Great! You are now registered in our database with the following details:\n' + str(user))
 
 
-# start
-@bot.message_handler(commands=['start'])
-def start_message(message):
-    msg = bot.reply_to(
-        message, "We see that you are a first timer. We need to know some details from you. How old are you?")
-    bot.register_next_step_handler(msg, process_age_step)
-
 
 # get canteens
 def process_canteens(message):
@@ -138,14 +147,8 @@ def process_stores(message):
 
     selectedCanteen = message.text
     stores = canteens[selectedCanteen]
-
-    # Buttons to select stores
     # TODO Find a way to add stores w/o having to hardcode
-    storesKeyBoard = types.ReplyKeyboardMarkup(resize_keyboard = True, one_time_keyboard=True, row_width=2)
-    if (selectedCanteen == "Frontier @ Science"):
-        storesKeyBoard.add('Thai Food', 'Noodles')
-    else:
-        storesKeyBoard.add('Chicken Rice', 'Mala')
+    storesKeyBoard = configureStoresKeyboard(selectedCanteen)
 
     msg = bot.reply_to(message, 'Which store are you eating from?', reply_markup=storesKeyBoard)
   
