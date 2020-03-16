@@ -7,10 +7,10 @@ from cedbDatabase import cedbDatabase
 from ML_Controller import *
 
 #API key for deployment
-API_KEY = "# Some API KEY"
+# API_KEY = os.environ['API_KEY']
 
-# load_dotenv()
-# API_KEY = os.getenv("API_KEY")
+load_dotenv()
+API_KEY = os.getenv("API_KEY")
 
 bot = telebot.TeleBot(API_KEY)
 
@@ -217,12 +217,47 @@ def start_report(message):
   report = Report(chat_id)
   reports[chat_id] = report
   select_canteen_prompt = "You have chosen to report about a store's food portions. Select the canteen you ate from:\n"
-  options = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True, row_width=2)
-  options.add('Choice 1', 'Choice 2')
-  
-  canteen = bot.reply_to(message, select_canteen_prompt, reply_markup=options)
-  bot.register_next_step_handler(canteen, process_canteens)
-  # TODO implement a method called process_canteens
+  canteen = bot.reply_to(message, select_canteen_prompt, reply_markup=canteenKeyBoard)
+  bot.register_next_step_handler(canteen, process_canteen)
+
+# get store
+def process_canteen(message):
+    chat_id = message.chat.id
+    selectedCanteen = message.text
+    report = reports[chat_id]
+    report.canteen = selectedCanteen
+
+    stores = canteens[selectedCanteen]
+    storesKeyBoard = configureStoresKeyboard(selectedCanteen)
+    msg = bot.reply_to(message, 'Which store are you eating from?', reply_markup=storesKeyBoard)
+    bot.register_next_step_handler(msg, process_store)
+
+
+def process_store(message):
+    food_item = message.text
+    chat_id = message.chat.id
+    report = reports[chat_id]
+    report.store = food_item
+    msg = bot.reply_to(message, 
+        "From a scale of 1 to 10, rate how full you are after eating the food. 1 means too little food, 10 means too much food.")
+    bot.register_next_step_handler(msg, process_fullness_rating)
+
+def process_fullness_rating(message):
+    chat_id = message.chat.id
+    report = reports[chat_id]
+    fullness_rating = int(message.text, 10)
+    if fullness_rating < 1 or fullness_rating > 10:
+        msg = bot.reply_to(message, "The rating should be an integer from 1 to 10 (inclusive). Please rate again with valid values")
+        bot.register_next_step_handler(msg, process_fullness_rating)
+
+    
+    report.fullness_rating = fullness_rating
+    bot.register_next_step_handler(message, process_report)
+
+def process_report(message):
+    chat_id = message.chat.id
+    report = reports[chat_id]
+    bot.reply_to(message, "Thank you for making the following rating: \n" + str(report))
 
 # help message
 @bot.message_handler(commands = ['help'])
@@ -234,4 +269,7 @@ def launch_report(message):
   msg = bot.reply_to(message, help_message)
   
 initialiseCanteens()
-bot.polling()
+try:  
+    bot.polling()
+except:
+    bot.polling()
