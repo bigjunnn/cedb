@@ -16,9 +16,8 @@ bot = telebot.TeleBot(API_KEY)
 
 commands = {  # command description used in the "help" command
     'start': 'If you are a first time user of this bot, register yourself with this command!',
-    'edit': 'Edits your user details',
+    # 'edit': 'Edits your user details',
     'recommend': 'Recommends food portion changes about meals in a canteen',
-    'logmeal': 'Record down a meal that you had.',
     'help': 'Gives you information about the available commands',
     'report': 'Have feedback about food portions in NUS Canteens? Use this command to report about them!'
 }
@@ -157,22 +156,32 @@ def process_weight_step(message):
     msg = bot.reply_to(message, 'To get started, use /recommend to get your food recommendation!')
  
 # edit
-@bot.message_handler(commands=['edit'])
-def edit_details(message):
-    # TODO retrieve current details from database
-    text = """"Your current details are: 
-          Age: 
-          Gender: 
-          Height: 
-          Weight: 
-          
-          Type /back if you do not want to edit your details."""
-    # display current details
-    bot.reply_to(message, text)
+# @bot.message_handler(commands=['edit'])
+# def edit_details(message):
+#     # TODO retrieve current details from database
+#     text = """"Your current details are: 
+#           Age: 
+#           Gender: 
+#           Height: 
+#           Weight:
 
-    # TODO how do i get user input
-    # TODO after editing details update database and then reply user to say that details
-    # successfully changed
+
+#           To edit your details, enter the details you want to change in the [detail]: [updated value] format.
+#           As an example, if you want to edit your age and weight, reply with the following details:
+#           "Age: 20, Weight: 45"
+#           Type /back if you do not want to edit your details."""
+    
+#     msg = bot.reply_to(message, text)
+#     formatted_msg = format_message(msg.text)
+#     if not formatted_msg:
+#         msg = bot.reply_to(msg, """You have entered your details incorrectly. 
+#             To edit your details, enter the details you want to change in the [detail]: [updated value] format.
+#             As an example, if you want to edit your age and weight, reply with the following details:
+#             "Age: 20, Weight: 45"
+#             Type /back if you do not want to edit your details.""")
+#         bot.register_next_step_handler(msg, edit_details)
+#     else:
+
   
 # recommend
 @bot.message_handler(commands=['recommend'])
