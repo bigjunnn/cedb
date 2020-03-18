@@ -10,7 +10,7 @@ from ML_Controller import *
 # API_KEY = os.environ['API_KEY']
 
 # load_dotenv()
-API_KEY = "1097463509:AAFjiWHPU7HHSyxPh3thej8_Q_4TobLF6ag"
+API_KEY = "YOUR API KEY"
 
 bot = telebot.TeleBot(API_KEY)
 
@@ -264,7 +264,7 @@ def process_fullness_rating(message):
         bot.register_next_step_handler(msg, process_fullness_rating)
         return
     
-    bot.register_next_step_handler(message, process_report)
+    process_report(message)
 
 def process_report(message):
     chat_id = message.chat.id
